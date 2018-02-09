@@ -1,9 +1,11 @@
 def my_collect(arr)
  counter = 0
+ new_list = []
   while counter <arr.length
-    yield(arr[counter])
+    new_list << yield(arr[counter])
     counter += 1
   end
+  new_list
 end
 
 array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
